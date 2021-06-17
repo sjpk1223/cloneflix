@@ -1,10 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Row from "./Row";
+import Requests from "./request";
 
 function App() {
   return (
     <div className="App">
-
+      <Row title="Trending Now" fetchUrl={Requests.fetchTrending} />
     </div>
   );
 }
