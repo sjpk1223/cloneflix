@@ -1,0 +1,33 @@
+.nav {
+  position: fixed; /* fixes to the top */
+  top: 0;
+  width: 100%; /* position:fixed has clashes with justifycontent space between so we must add width for justify content to take effect */
+  padding: 20px;
+  height: 30px; /* gives navbar its own column */
+  z-index: 1;
+
+  /* display: flex; changes column into row
+  justify-content: space-between; dynamically allows window to put space between elements */
+
+  /* Animantions must add timing */
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+
+.nav_black {
+  background-color: #111;
+}
+
+.nav_logo {
+  position: fixed;
+  left: 20px;
+  width: 80px;
+  object-fit: contain; /* fixes crunched font */
+}
+
+.nav_avatar {
+  position: fixed;
+  right: 20px;
+  width: 30px;
+  object-fit: contain;
+}
