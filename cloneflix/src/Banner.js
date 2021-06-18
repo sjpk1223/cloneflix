@@ -41,6 +41,7 @@ function Banner({ fetchUrl }) {
         </div>
         <h1 className="header_description">{truncate(movie?.overview, 150)}</h1>
       </div>
+      <div className="header-fadebottom"></div>
     </header>
   );
 }

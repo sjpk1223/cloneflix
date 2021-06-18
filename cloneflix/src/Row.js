@@ -20,7 +20,7 @@ function Row({ title, fetchUrl }) {
   const baseUrl = "https://image.tmdb.org/t/p/original/";
   //   console.table(movies);
   return (
-    <div>
+    <div className="row">
       <h2>{title}</h2>
       <div className="poster_container">
         {movies.map((movie) => (
